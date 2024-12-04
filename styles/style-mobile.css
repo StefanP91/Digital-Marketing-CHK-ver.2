@@ -338,9 +338,9 @@
                 & .card-body{
 
                 & img {
+                    position: absolute;
                     top: 50vh !important;
                     left: 4vw !important;
-
                 }
             }
         }

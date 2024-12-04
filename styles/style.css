@@ -684,7 +684,7 @@ a{
                 }
 
                 & .not-crossed{
-                    color: #F00;
+                    color: rgba(57, 77, 255, 1);
                     font-size: 24px;
                     font-weight: 700;
                 }
