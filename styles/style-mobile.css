@@ -515,6 +515,13 @@
         }
     }
 
+    #programs {
+        & .pricing-card {
+            & .pricing-middle {
+                padding: 5% 5% 14% 5%;
+            }
+        }   
+    }   
 
 
     .row{
