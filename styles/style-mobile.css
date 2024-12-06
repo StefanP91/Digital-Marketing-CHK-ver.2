@@ -350,7 +350,7 @@
 
                 & img {
                     position: absolute;
-                    top: 50vh !important;
+                    top: 47vh !important;
                     left: 4vw !important;
                 }
             }
@@ -437,7 +437,7 @@
                 & .linkedin-logo {
                     position: absolute;
                     top: 4vh;
-                    right: 27vw !important;
+                    right: 19vw !important;
                 }
             }
         }
