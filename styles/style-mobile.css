@@ -517,6 +517,11 @@
 
     #programs {
         & .pricing-card {
+            & .pricing-top {
+                padding: auto 1% !important;
+                height: 165px !important;
+            }
+
             & .pricing-middle {
                 padding: 5% 5% 14% 5%;
             }
