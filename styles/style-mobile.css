@@ -260,11 +260,13 @@
         .first-row-tablet,
         .third-row-tablet{
             margin-right: -10%;
+            overflow-x: hidden !important;
         }
 
         .second-row-tablet,
         .fourth-row-tablet{
             margin-left: -10%;
+            overflow-x: hidden !important;
         }
     }
 
@@ -462,12 +464,14 @@
         .third-row-mobile,
         .fifth-row-mobile{
             margin-right: -10%;
+            overflow-x: hidden;
         }
 
         .second-row-mobile,
         .fourth-row-mobile,
         .sixth-row-mobile{
             margin-left: -10%;
+            overflow-x: hidden;
         }
 
     }
@@ -495,10 +499,30 @@
         }
     }
 
-   
-   @mixin make-col-ready(){
+    #gezimStory {
+        & .story {
+            & .left-side {
+                & hr {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    #diplomas {
+        & .vstack {
+            height: auto !important;
+        }
+    }
+
+
+
+    .row{
         margin-right: 0 !important;
-    } 
+        margin-left: 0 !important;
+    }
+
+
 
 
 
