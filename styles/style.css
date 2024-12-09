@@ -147,12 +147,19 @@ a{
 
             margin-top: 5%;
 
-            .slow-carousel .carousel-item{
-                transition-duration: 20s;
+            & #heroCarousel{
+                height: 270px;
             }
+
+            .slow-carousel .carousel-item {
+                transition-duration: 30s;
+                transition-timing-function: linear;
+            }
+            
 
             & .carousel-item img{
                 width: 100%;
+                height: 100% !important;
             }
 
             .carousel-item .col-3 {
