@@ -11,7 +11,29 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
+// navigation appear on scroll
+document.addEventListener("DOMContentLoaded", () => {
+    const navigation = document.getElementById("navigation");
+    const visibilityThreshold = 990; 
+    let isVisible = false; 
+  
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+  
+      if (currentScrollY > visibilityThreshold && !isVisible) {
+       
+        navigation.classList.remove("hidden");
+        navigation.classList.add("visible");
+        isVisible = true; 
+      } else if (currentScrollY <= visibilityThreshold && isVisible) {
+        
+        navigation.classList.remove("visible");
+        navigation.classList.add("hidden");
+        isVisible = false; 
+      }
+    });
+  });
+  
 // Scroll into section
 function scrollInto (id){
   const section = document.getElementById(id)

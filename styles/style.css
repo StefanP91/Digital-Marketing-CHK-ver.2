@@ -193,6 +193,7 @@ a{
                     font-size: 18px;
                 }
             }
+
         }
 
 
@@ -202,15 +203,15 @@ a{
 /* MAIN */
 
 #navigation{
+    display: flex;
+    opacity: 0;
     background-color: #041C55;
     padding: 0 10%;
     height: 74px;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     position: sticky;
     top: 112px;
-    margin-top: 5%;
     z-index: 800;
 
     & button{
@@ -225,6 +226,36 @@ a{
             transform: scale(1.1);
             transition: 0.3s ease-in-out;
         }
+    }
+}
+
+#navigation.visible{
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#navigation.hidden {
+    animation: fadeOut 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px); 
     }
 }
 
