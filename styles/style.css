@@ -148,7 +148,7 @@ a{
             margin-top: 5%;
 
             & #heroCarousel{
-                height: 270px;
+                height: 220px;
             }
 
             .slow-carousel .carousel-item {
@@ -260,7 +260,7 @@ a{
 }
 
 #experience{
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & .experience-title{
         color: #071336;
@@ -302,7 +302,7 @@ a{
 
 #techSchool{
     background-color: rgba(0, 89, 255, 1);
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & h3{
         color: #FFFFFF;
@@ -320,7 +320,7 @@ a{
         background-color: transparent;
         border: 1px solid #A3E0FF;
         border-radius: 9px;
-        height: 265px;
+        height: 300px;
 
         & img{
             width: 54px;
@@ -344,7 +344,7 @@ a{
 
 #meetTheInstructors{
     background-color: #ffffff;
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & .intro{
         & h2 {
@@ -396,12 +396,19 @@ a{
         & .carousel-indicators{
             position: absolute;
             bottom: 0;
+            display: flex;
+            justify-content: space-evenly;
 
             & img{
-                width: 50px;
-                height: 50px;
+                /* width: 50px; */
+                height: 43px;
                 opacity: 1;
                 background-color: transparent;
+            }
+
+            & img:hover{
+                cursor: pointer;
+                transform: scale(1.1);
             }
         }
     }
@@ -422,7 +429,7 @@ a{
 
             & .card-title{
                 color: #071336;
-                font-size: 22px;
+                font-size: 18px;
                 font-weight: 800;
                 text-wrap: nowrap;
             }
@@ -435,7 +442,7 @@ a{
 
             & img {
                 position: absolute;
-                top: 28vh;
+                top: 24vh;
                 left: 1vw;
                 width: 37px;
                 height: 37px;
@@ -455,7 +462,7 @@ a{
 }
 
 #modules{
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & h2{
         color: #071336;
@@ -520,7 +527,7 @@ a{
 }
 
 #workWeek{
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & .col-md-2{
         padding: 0.3rem !important;
@@ -592,7 +599,7 @@ a{
 }
 
 #diplomas{
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & h1{
         color: #071336;
@@ -606,7 +613,7 @@ a{
         border-radius: 16px;
         border: 1px solid rgba(5, 18, 56, 0.20);
         background: #FFF;
-        height: 403px;
+        height: 430px;
 
         & img{    
             height: 48px;
@@ -809,7 +816,7 @@ a{
 }
 
 #newCareer{
-    padding: 5% 10%;
+    padding: 5% 11%;
 
     & .col-md-7,
     & .col-md-5{
@@ -873,7 +880,7 @@ a{
             & img{
                 position: absolute;
                 bottom: 0;
-                left: 0; 
+                left: -2%; 
             }
         }
     }
@@ -881,7 +888,7 @@ a{
 }
 
 #realProjects{
-    padding: 5% 3%;
+    padding: 5% 11%;
     background-color: #0059FF;
 
     & .projects{
@@ -918,6 +925,7 @@ a{
         padding: 25px 12px;
         background-color: rgba(163, 224, 255, 0.50);
         border-radius: 10px;
+        height: 300px;
 
         & .card-description{
             color: #ffffff;
@@ -929,7 +937,7 @@ a{
 }
 
 #successStories{
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & .intro{
         & h1{
@@ -955,14 +963,19 @@ a{
             position: absolute;
             bottom: 0;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items:center;
 
             & img{
-                width: 50px;
-                height: 50px;
+                /* width: 50px; */
+                height: 43px;
                 opacity: 1;
                 background-color: transparent;
+            }
+
+            & img:hover{
+                cursor: pointer;
+                transform: scale(1.1);
             }
         }
     }
@@ -978,7 +991,7 @@ a{
             & .linkedin-logo{
                 position: absolute;
                 top: 4vh;
-                right: 4vw;
+                right: 2vw;
             }
 
             & .linkedin-logo:hover{
@@ -1049,7 +1062,7 @@ a{
             height: 100%;
             align-items: start;
             justify-content: center;
-            padding-left: 5%;
+            padding-left: 11%;
 
             & h2{
                 color: #A3E0FF;
@@ -1160,7 +1173,7 @@ a{
 }
 
 #calculator{
-    margin: 5% 3%;
+    margin: 5% 5%;
     background-color: #A3E0FF;
     border-radius: 9px;
     padding: 2% 3%;
@@ -1322,7 +1335,7 @@ a{
 }
 
 #applicationProcess{
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & h1{
         color: #071336;
@@ -1348,7 +1361,7 @@ a{
 }
 
 #furtherGuidance{
-    padding: 5% 3%;
+    padding: 5% 11%;
     background-color: #0059FF;
 
     & h1{
@@ -1379,10 +1392,11 @@ a{
         border: none;
         border-radius: 9px;
         background-color: #EB3A7A;
-        padding: 15px 20px;
+        padding: 6% 6%;
         color: #ffffff;
         font-size: 20px;
         font-weight: 700;
+        text-wrap: nowrap;
 
         &:hover{
             background-color: #85adf7;
@@ -1396,7 +1410,7 @@ a{
 }
 
 #faq{
-    padding: 5% 3%;
+    padding: 5% 11%;
 
     & h1{
         color: #071336;

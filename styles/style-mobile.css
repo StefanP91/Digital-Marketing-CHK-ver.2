@@ -6,7 +6,7 @@
             & .linkedin-logo{
                 position: absolute;
                 top: 4vh;
-                right: 1vw !important;
+                right: 0vw !important;
             }
         }
     }
@@ -25,6 +25,100 @@
 
         }
     
+    }
+
+    #meetTheInstructors{
+        background-color: #ffffff;
+        padding: 5% 11%;
+    
+        & .intro{
+            & h2 {
+                color: #071336;
+                font-size: 32px;
+                font-weight: 700;
+            }
+    
+            & p{
+                color: rgba(7, 19, 54, 0.78);
+                font-size: 16px;
+            }
+        }
+    
+        & .instructor-rating{
+            background-color: #0059FF;
+            border-radius: 9px;
+            padding: 16px 24px;
+            text-align: center;
+    
+            & p{
+                color: #ffffff;
+                font-size: 26px;
+                font-weight: 800;
+                margin: 0;
+            }
+    
+            & span{
+                color: rgba(255, 255, 255, 0.74);
+                font-weight: 18px;
+            }
+        }
+    
+        & .skills{
+            span{
+                background-color: #A3E0FF8F;
+                color: #071336;
+                font-size: 14px;
+                font-weight: 600;
+                border: none;
+                border-radius: 21px;
+                padding: 16px 26px;
+            }
+        }
+    
+        & .carousel-indicators-container{
+            position: relative;
+    
+            & .carousel-indicators{
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: space-evenly;
+    
+                & img{
+                    /* width: 50px; */
+                    height: 43px;
+                    opacity: 1;
+                    background-color: transparent;
+                }
+    
+                & img:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    
+        #instructorsCarousel .card{
+            height: 100%;
+            border: none;
+
+    
+            & .card-body{
+                & img {
+                    position: absolute;
+                    top: 22vh;
+                    left: 1vw;
+                    width: 37px;
+                    height: 37px;
+                    
+                }
+    
+                & img:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
     
 }
@@ -81,28 +175,6 @@
 
         padding: 15% 0 7% 0 !important;
         position: static !important;
-
-        /* & .hero-lower-section{
-
-            margin-top: 5%;
-
-            .slow-carousel .carousel-item{
-                transition-duration: 20s;
-            }
-
-            & .carousel-item img{
-                width: 100%;
-            }
-
-            .carousel-item .col-3 {
-                flex: 0 0 calc(25% - 8px);
-                margin-right: 5px;
-            }
-            
-            .carousel-item .col-3:last-child {
-                margin-right: 0; 
-            }
-        } */
 
         & .hero-bottom-section{
             position: static !important;
@@ -337,6 +409,37 @@
         align-items: center;
     }
 
+    #techSchool{
+        padding: 5% 0% !important;
+    }
+
+    #meetTheInstructors {
+        padding: 5% 0% !important;
+    }
+
+    #modules {
+        padding: 5% 0% !important;
+    }
+
+    #workWeek {
+        padding: 5% 0% !important;
+    }
+
+    #realProjects {
+        padding: 5% 0% !important;
+       & .card{
+        height: auto !important;
+       }
+    }
+
+    #furtherGuidance{
+        padding: 5% 0% !important;
+    }
+
+    #faq{
+        padding: 5% 0% !important;  
+    }
+
     #instructorsCarouselMobile {
         .carousel-control-prev,
         .carousel-control-next{
@@ -350,7 +453,7 @@
 
                 & img {
                     position: absolute;
-                    top: 47vh !important;
+                    top: 75vh !important;
                     left: 4vw !important;
                 }
             }
@@ -428,6 +531,7 @@
     }
 
     #successStories {
+        padding: 5% 0% !important;
         & #successStoriesCarousel {
             & .card {
                 border-left: 0 !important;
@@ -437,7 +541,7 @@
                 & .linkedin-logo {
                     position: absolute;
                     top: 4vh;
-                    right: 19vw !important;
+                    right: 24vw !important;
                 }
             }
         }
@@ -510,6 +614,7 @@
     }
 
     #diplomas {
+        padding: 5% 0% !important;
         & .vstack {
             height: auto !important;
         }
