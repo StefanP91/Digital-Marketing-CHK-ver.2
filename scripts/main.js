@@ -11,6 +11,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
 // navigation appear on scroll
 document.addEventListener("DOMContentLoaded", () => {
     const navigation = document.getElementById("navigation");
@@ -82,7 +83,7 @@ videoContainer.addEventListener('mouseleave', function() {
 pauseButton.style.display = 'none';
 });
 
-// Slider hiring partners
+// Slider hiring partners and hero slider
 
 document.addEventListener("DOMContentLoaded", () => {
     const sliders = document.querySelectorAll(".slider");
@@ -99,12 +100,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const slideWidth = slides[0].offsetWidth; 
         const totalWidth = slides.length * slideWidth;
 
-
         const isMiddleSlider = slider.classList.contains("slider-middle");
-        const direction = isMiddleSlider ? -1 : 1; 
+        const direction = isMiddleSlider ? -1 : 1;
+
+        const speed = 0.5; // Adjust this value to change speed (higher = faster)
 
         function slide() {
-            scrollAmount += direction; 
+            scrollAmount += direction * speed; // Use the speed multiplier
 
             if (direction === 1 && scrollAmount >= totalWidth) {
                 scrollAmount = 0; 
@@ -114,13 +116,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             slider.style.transform = `translateX(-${scrollAmount}px)`;
 
-            
             requestAnimationFrame(slide);
         }
 
         requestAnimationFrame(slide);
     });
 });
+
 
 // Calculator
 const calculatorPrice = document.getElementById('calculator-monthly-price');
