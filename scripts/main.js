@@ -82,6 +82,46 @@ videoContainer.addEventListener('mouseleave', function() {
 pauseButton.style.display = 'none';
 });
 
+// Slider hiring partners
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sliders = document.querySelectorAll(".slider");
+
+    sliders.forEach((slider) => {
+        const slides = Array.from(slider.querySelectorAll(".slide"));
+
+        slides.forEach((slide) => {
+            const clone = slide.cloneNode(true);
+            slider.appendChild(clone);
+        });
+
+        let scrollAmount = 0; 
+        const slideWidth = slides[0].offsetWidth; 
+        const totalWidth = slides.length * slideWidth;
+
+
+        const isMiddleSlider = slider.classList.contains("slider-middle");
+        const direction = isMiddleSlider ? -1 : 1; 
+
+        function slide() {
+            scrollAmount += direction; 
+
+            if (direction === 1 && scrollAmount >= totalWidth) {
+                scrollAmount = 0; 
+            } else if (direction === -1 && scrollAmount <= 0) {
+                scrollAmount = totalWidth; 
+            }
+
+            slider.style.transform = `translateX(-${scrollAmount}px)`;
+
+            
+            requestAnimationFrame(slide);
+        }
+
+        requestAnimationFrame(slide);
+    });
+});
+
 // Calculator
 const calculatorPrice = document.getElementById('calculator-monthly-price');
 const calculatorPriceBox = document.getElementById('calculator-price-box');

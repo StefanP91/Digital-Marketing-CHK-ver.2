@@ -1136,7 +1136,7 @@ a{
 
 #hiringPartners{
     padding: 5% 0;
-    overflow: hidden;
+    
 
     & h1{
         color: #071336;
@@ -1144,33 +1144,31 @@ a{
         font-size: 32px;
         font-weight: 700;
     }
-
-    .col-md-2{
-        border: 1px solid rgba(5, 18, 56, 0.20);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .first-row,
-    .third-row{
-        margin-right: -8%;
-
-        & .col-md-2{
-            border-left: none;
-        }
-    }
-
-    .second-row{
-        margin-left: -8%;
-
-        & .col-md-2{       
-            border-top: none;
-            border-bottom: none;
-            border-left: none;
-        }
-    }
 }
+
+#hiringPartners .slider-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hiringPartners .slider{
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    transform: translateX(0);
+    will-change: transform;
+}
+
+#hiringPartners .slide {
+    min-width: 200px;
+    max-height: 111px;
+    border: 1px solid rgba(5, 18, 56, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #calculator{
     margin: 5% 5%;

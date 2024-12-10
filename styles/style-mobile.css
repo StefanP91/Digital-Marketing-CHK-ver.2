@@ -315,33 +315,6 @@
         }
     }
 
-    #hiringPartners{
-        .first-row,
-        .third-row{
-            display: none!important;
-        }
-    
-        .second-row{
-            display: none !important;
-        }
-
-        .col-sm-3{
-            border: 1px solid rgba(5, 18, 56, 0.20);
-        }
-
-        .first-row-tablet,
-        .third-row-tablet{
-            margin-right: -10%;
-            overflow-x: hidden !important;
-        }
-
-        .second-row-tablet,
-        .fourth-row-tablet{
-            margin-left: -10%;
-            overflow-x: hidden !important;
-        }
-    }
-
     #calculator {
         & .left-side {
             & h2 {
@@ -545,39 +518,6 @@
                 }
             }
         }
-    }
-
-    #hiringPartners{
-        .first-row,
-        .third-row,
-        .second-row,
-        .first-row-tablet,
-        .third-row-tablet,
-        .second-row-tablet,
-        .fourth-row-tablet,
-        .fifth-row-tablet{
-            display: none!important;
-        }
-
-
-        .col-4{
-            border: 1px solid rgba(5, 18, 56, 0.20);
-        }
-
-        .first-row-mobile,
-        .third-row-mobile,
-        .fifth-row-mobile{
-            margin-right: -10%;
-            overflow-x: hidden;
-        }
-
-        .second-row-mobile,
-        .fourth-row-mobile,
-        .sixth-row-mobile{
-            margin-left: -10%;
-            overflow-x: hidden;
-        }
-
     }
 
     #calculator {
