@@ -350,7 +350,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 435px) {
     .spots {
         display: none !important;
     }
@@ -557,6 +557,29 @@
         padding: 5% 0% !important;
         & .vstack {
             height: auto !important;
+        }
+    }
+
+    #skills{
+        padding: 5% 0 50% 0 !important;
+    
+        & .skills-inner{
+
+    
+            & .card{
+    
+                & h2{
+                    font-size: 22px;
+                }
+    
+                & p{
+                    font-size: 16px;
+                }
+
+                & span{
+                    font-size: 14px;
+                }
+            }
         }
     }
 
