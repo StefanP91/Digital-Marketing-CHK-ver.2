@@ -583,6 +583,24 @@
         }
     }
 
+    #internship{
+
+    
+        & .left-side{
+            & h1{
+                font-size: 26px;
+                text-align: center;
+            }
+
+            & span{
+                & img{
+                    width: 26px;
+                    height: 33px;
+                }
+            }
+        }
+    }
+
     #programs {
         & .pricing-card {
             & .pricing-top {

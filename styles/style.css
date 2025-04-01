@@ -682,6 +682,28 @@ a{
     }
 }
 
+#internship{
+    padding: 5% 0;
+    background-color:#0059FF;
+
+    & .left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        & h1{
+            font-size: 34px;
+            font-weight: 800;
+            color: #FFFFFF;
+
+            & .blue-text{
+                color: #A3E0FF;
+            }
+        }
+    }
+}
+
 #programs{
     padding: 5% 15%;
 
